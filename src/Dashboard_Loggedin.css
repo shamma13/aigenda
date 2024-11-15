@@ -1,0 +1,253 @@
+.dashboard_loggedin_main_container{
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    width: 100vw;
+    height: 100vh;
+    background-color: #F6F8FF;
+}
+
+.dashboard_loggedin_second_container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 93vh;
+}
+
+.sidebar{
+    background-color: white;
+    width: 21vw;
+    margin: 2vh;
+    margin-left: 3vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px; 
+    box-sizing: border-box; 
+    justify-content: space-between
+
+}
+
+.task_container{
+    width: 100%;
+    /* Set a min-height instead of height so it can grow with content */
+    min-height: 20%; 
+    position: relative; 
+    border-bottom: 1px solid #ABB1BB;
+}
+
+
+.task_header{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+}
+
+.calendar_container{
+    background-color: white;
+    margin: 2vh;
+    margin-right: 3vh;
+    width: 100%;
+}
+
+.calendar_header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calendar_header_date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    width: auto;
+    align-items: center;
+    box-sizing: border-box; 
+    padding: 20px;    
+}
+
+.weekly_monthly_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; 
+    background: #F2F2F2;
+    border-radius: 20px;
+    width: 166px;
+    height: 31px;
+    margin: 20px;
+
+}
+
+.date_arrows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date_arrow_btn{
+    background-color: transparent; /* Change if you want a different background */
+    color: #7A7A7A; /* Text color */
+    border: none; /* Remove border if needed */
+    cursor: pointer; /* Change cursor on hover */
+    margin: 8px;
+    width: 22px;
+    height: 20px;
+}
+
+.date_arrow_btn:hover {
+    color: #5A5A5A; /* Optional: Darker shade on hover */
+}
+
+.current_date{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 5px;
+}
+
+.today_btn{
+    box-sizing: border-box;
+    width: 67px;
+    height: 31px;
+    border: 1.5px solid #A1A6AD;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #7A7A7A;
+    cursor: pointer;
+}
+
+.monthly_btn,
+.weekly_btn {
+    box-sizing: border-box;
+    width: 83px;
+    height: 31px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    transition: transform 0.3s ease; /* Add transition */
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #7A7A7A;
+}
+
+.monthly_btn.active,
+.weekly_btn.active { 
+    background: #FFFFFF; 
+    border: 1px solid #F2F2F2;
+    border-radius: 20px; 
+    color: #584AFF; 
+}
+
+.calendar_component {
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.calendar_header_2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 20px;    
+    padding-right: 20px;    
+    padding-bottom: 20px;    
+}
+
+.add_event_btn{
+    margin-right: 5px;
+    width: 104px;
+    height: 31px;
+    border: 1.5px solid #A1A6AD;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #7A7A7A;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+
+}
+
+.add_event_btn:hover {
+    background-color: #A1A6AD; /* Switch to a darker background */
+    color: #FFFFFF; /* Invert text color to white */
+    /* border: 1.5px solid #FFFFFF; Invert border color */
+}
+
+
+.add_tasks_btn{
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    width: 104px;
+    height: 31px;
+    background: #7D72FF;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition */
+
+
+}
+
+.add_tasks_btn:hover {
+    background: #FFFFFF; /* Invert background to white */
+    color: #7D72FF; /* Invert text color to match original background */
+    border: 1.5px solid #7D72FF; /* Add a border with the original background color */
+}
+
+
+.filter_btn{
+    border: none;
+    outline: none; 
+    background: #F2F2F2;
+    border-radius: 10px;
+    width: 80px;
+    height: 31px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #7A7A7A;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+.filter_icon{
+    position: relative;
+    width: 16px;
+    height: 14px;
+    color: #7A7A7A;
+    top: 2px;
+    font-weight: 22px;
+    padding-right: 2px;
+}
+
+.today_btn:hover {
+    background-color: #A1A6AD; /* Switch to a darker background */
+    color: #FFFFFF; /* Invert text color to white */
+    /* border: 1.5px solid #FFFFFF; Invert border color */
+}
+
