@@ -1,0 +1,125 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 7vh;
+    background-color: white;
+    border-bottom: 1px solid #D8D8D8;
+    align-items: center;    
+    justify-content: space-between; 
+}
+
+.logo_title_container{
+    flex: 1; 
+    display: flex; 
+    align-items: center; 
+    margin-left: 15px;
+    
+}
+
+.logo{
+    width: 30px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.navbar_title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.navbar_btns {
+    flex: 1; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+
+}
+
+.navbar_btn{
+    background: none;         
+    border: none;             
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    cursor: pointer; 
+    margin: 15px;         
+}
+
+.navbar_btn:hover {
+    color: #584AFF;
+    transition: color 0.3s ease; 
+
+}
+
+.navbar_btn.active {
+    color: #584AFF;
+}
+
+.profile_container{
+    flex: 1; 
+    display: flex; 
+    align-items: center; 
+    justify-content: right; 
+    margin-right: 15px;
+}
+
+.navbar_notifications{
+    position: relative;  
+    margin: 7px;  
+    cursor: pointer;      
+}
+
+.navbar_bell_icon{
+    width: 25px;
+    height: 25px;
+}
+
+.navbar_notifications_number{
+    position: absolute;           
+    top: -3px;                      
+    right: 0;                     
+    width: 13px;                 
+    height: 13px;                
+    border-radius: 50%;          
+    overflow: hidden;           
+    display: flex;               
+    justify-content: center;      
+    align-items: center;         
+    background-color: #FFA9A9; 
+    color: white;
+    font-size: 10px;
+}
+
+.navbar_username{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.mini_profile_pic{
+    width: 28px;               
+    height: 28px;            
+    border-radius: 50%;         
+    overflow: hidden;          
+    display: flex;             
+    justify-content: center;  
+    align-items: center;       
+    background-color: #CBCBCB;
+    margin: 5px;
+}
+
+.navbar_down_arrow{
+    width: 18px;
+    height: 18px;
+    color: #7A7A7A;
+    cursor: pointer;
+
+}
+
