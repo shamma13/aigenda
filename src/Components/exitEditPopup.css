@@ -1,0 +1,46 @@
+.Dialog {
+    border-radius: 20px; /* Rounded corners */
+    width: 400px;        /* Square-like dialog */
+    text-align: center;  /* Center text */
+  }
+  
+  .Dialog .MuiDialogTitle-root {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Dialog .MuiDialogContent-root {
+    text-align: center; /* Center content text */
+    padding-top: 10px;
+  }
+  
+  .Dialog .MuiDialogActions-root {
+    justify-content: center; /* Center buttons */
+  }
+  
+  .WarningIconWrapper {
+    background-color: red;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .WarningIcon {
+    color: white;
+    font-size: 30px;
+  }
+  
+  /* Button styling specific to Unsaved Changes */
+  .discard-button.MuiButton-contained {
+    background-color: #B7C2FF !important; /* Light blue */
+    color: white !important;
+  }
+  
+  .discard-button.MuiButton-contained:hover {
+    background-color: #21a1f1 !important; /* Darker blue on hover */
+  }
