@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.logoNameBox{
+    position: absolute;
+    top: 0;       
+    left: 0;        
+    display: flex;
+    align-items: center; 
+    padding: 20px;    
+    gap: 10px;
+}
+
+.logoNameBox img{
+    width: 40px;
+}
+
+.logoNameBox p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.textBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;     
+    align-items: center;
+    position: absolute;            
+    top: 50%;                      
+    left: 30%;                     
+    transform: translate(-50%, -50%);
+    width: 950px;  
+    height: 150px;         
+    margin: 0;
+    z-index: 10;
+}
+
+.heading{
+    width: 700px;
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.regularText{
+    width: 575px;
+    height: 90px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 3%;
+}
+
+.blueButton{
+    width: 200px;
+    height: 45px;
+    background-color: #B7C2FF;
+    color: white;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #B7C2FF;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.blueButton:hover{
+    background-color: #949ED6;
+}
+
+.whiteButtonsBox {
+    position: absolute;         
+    top: 0.75%;               
+    right: 1.5%;              
+    display: flex;            
+    gap: 10px;                
+    padding: 0.5%;             
+    z-index: 10;
+}
+
+.whiteButtonsBox button{
+    width: 170px;
+    background-color: white;
+    color: black;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.whiteButtonsBox button:hover{
+    background-color: #B7C2FF;
+    color: white;
+    border: 1px solid white;
+}
+
+.blueCircleBox {
+    position: relative;       
+    height: 100vh;    
+    overflow: hidden;   
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.blueCircleBox img{
+    position: absolute;
+    width: 55%;
+    right: -12%;
+    opacity: 80%;       
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    transform: rotate(180deg); 
+}
+
